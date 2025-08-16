@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Play, Github, ArrowDown } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Play, Github, ArrowDown } from "lucide-react";
 
 const HeroSection: React.FC = () => {
   const [currentEmoji, setCurrentEmoji] = useState(0);
-  const emojis = ['✊', '✋', '✌️'];
+  const emojis = ["✊", "✋", "✌️"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -13,18 +13,21 @@ const HeroSection: React.FC = () => {
   }, []);
 
   const handleScrollToDemo = () => {
-    const demoElement = document.getElementById('demo');
+    const demoElement = document.getElementById("demo");
     if (demoElement) {
-      demoElement.scrollIntoView({ behavior: 'smooth' });
+      demoElement.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-purple-900/20 to-cyan-900/20"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,191,255,0.1),transparent_50%)]"></div>
-      
+
       {/* Floating Animations */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
@@ -63,13 +66,20 @@ const HeroSection: React.FC = () => {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed animate-in slide-in-from-bottom-8 duration-700 delay-600">
-            Hand-tracked gestures with <span className="text-cyan-400 font-semibold">OpenCV + MediaPipe</span>. 
-            Play against the computer. <span className="text-purple-400 font-semibold">First to 5 wins</span>.
+            Hand-tracked gestures with{" "}
+            <span className="text-cyan-400 font-semibold">
+              OpenCV + MediaPipe
+            </span>
+            . Play against the computer.{" "}
+            <span className="text-purple-400 font-semibold">
+              First to 5 wins
+            </span>
+            .
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-in slide-in-from-bottom-8 duration-700 delay-800">
-            <button 
+            <button
               onClick={handleScrollToDemo}
               className="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 focus:ring-offset-gray-900"
             >
@@ -77,9 +87,14 @@ const HeroSection: React.FC = () => {
               Play in Your Browser
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-purple-700 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity -z-10"></div>
             </button>
-            
-            <button 
-              onClick={() => window.open('#', '_blank')}
+
+            <button
+              onClick={() =>
+                window.open(
+                  "https://github.com/Pravakarcoder/opencv-mediapipe-rps-game",
+                  "_blank"
+                )
+              }
               className="group inline-flex items-center px-8 py-4 bg-gray-800/50 backdrop-blur-sm border-2 border-gray-700 text-white rounded-xl font-semibold text-lg transition-all duration-300 hover:border-cyan-400 hover:bg-gray-800/70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 focus:ring-offset-gray-900"
             >
               <Github className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />

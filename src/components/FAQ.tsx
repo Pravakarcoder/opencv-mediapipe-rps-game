@@ -123,9 +123,15 @@ const FAQ: React.FC = () => {
                 community for help.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <button className="px-6 py-3 bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 focus:ring-offset-gray-900">
-                  View Documentation
-                </button>
+                <a
+                  href="https://github.com/Pravakarcoder/opencv-mediapipe-rps-game"
+                  target="_blank"
+                >
+                  <button className="px-6 py-3 bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 focus:ring-offset-gray-900">
+                    {" "}
+                    View Documentation
+                  </button>
+                </a>
               </div>
             </div>
           </div>
