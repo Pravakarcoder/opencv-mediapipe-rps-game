@@ -35,7 +35,7 @@
 </li>
 </ul>
 <hr>
-<h2>Overview</h2>
+<h2 id="overview">Overview</h2>
 <p>opencv-mediapipe-rps-game is a developer-focused toolkit that leverages real-time hand gesture recognition to create interactive web applications and games. It combines OpenCV and MediaPipe for accurate gesture detection with a React frontend, enabling seamless, gesture-driven user experiences.</p>
 <p><strong>Why opencv-mediapipe-rps-game?</strong></p>
 <p>This project empowers developers to integrate cutting-edge computer vision into their web apps. The core features include:</p>
@@ -55,14 +55,14 @@
 <h2>🎥 Demo Video</h2>
 <div align="center"> <video src="demo/demo1.mp4" width="100%" controls> Your browser does not support the video tag. </video> <br><br> <video src="demo/demo2.mp4" width="80%" controls> Your browser does not support the video tag. </video> </div>
 <hr>
-<h2>Getting Started</h2>
-<h3>Prerequisites</h3>
+<h2 id='getting-started'>Getting Started</h2>
+<h3 id='prerequisites'>Prerequisites</h3>
 <p>This project requires the following dependencies:</p>
 <ul class="list-disc pl-4 my-0">
 <li class="my-0"><strong>Programming Language:</strong> TypeScript, Python</li>
 <li class="my-0"><strong>Package Manager:</strong> Npm</li>
 </ul>
-<h3>Installation</h3>
+<h3 id='installation'>Installation</h3>
 <p>Build opencv-mediapipe-rps-game from the source and install dependencies:</p>
 <ol>
 <li class="my-0">
@@ -82,7 +82,7 @@
 <p><strong>Using <a href="https://www.npmjs.com/">npm</a>:</strong></p>
 <pre><code class="language-sh">❯ npm install
 </code></pre>
-<h3>Usage</h3>
+<h3 id='usage'>Usage</h3>
 <p>Run the project with:</p>
 <p><strong>Using <a href="https://www.npmjs.com/">npm</a>:</strong></p>
 <pre><code class="language-sh">npm start
