@@ -532,7 +532,7 @@ const LiveDemo: React.FC = () => {
     setGameStatus("playing");
 
     setTimeout(() => {
-      setGameStatus(playerScore >= 4 || cpuScore >= 4 ? "winner" : "ready");
+      setGameStatus(playerScore >= 5 || cpuScore >= 5 ? "winner" : "ready");
     }, 2000);
   };
 
